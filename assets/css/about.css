@@ -1,13 +1,13 @@
 #nosotros{
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  padding: 10px 100px;
-  margin-bottom: 20px;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	padding: 10px 100px;
+	margin-bottom: 20px;
 }
 .nosotros{
-  background-color: #fff;
-  height: 1000px;
+	background-color: #fff;
+	height: 1000px;
 
 }
 .informacion-nosotros{
@@ -41,4 +41,10 @@
 .title-nosotros{
 	font-weight: bold;
 
+}
+.title-social-f{
+	color: white;
+}
+.caption-description-f{
+	color: white;
 }
