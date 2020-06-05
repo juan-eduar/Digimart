@@ -625,11 +625,15 @@
   .container-navbar{
     padding: 0;
   }
+  .logo{
+    padding: 0px 0 0 0px;
+  }
   .small-options{
     padding-right: 17px !important;
   }
   .contenedor{
     padding: 0;
+    text-align: center;
   }
   .modal-header{
     width: 150%;
@@ -652,7 +656,7 @@
     display: none;
   }
   .logo-slice{
-    padding: 55px 0;
+    padding: 45px 0;
   }
   .title-social-f{
     color: white;
@@ -669,11 +673,28 @@
   #description{
     padding: 0;
   }
+  nav{
+    padding: 0px 0px 0px 0px;
+  }
   #category{
     padding: 20px 10px;
   }
   .img-products{
     width: 246px;
+  }
+  .container-general-footer-logo{
+    height: 115px;
+  }
+  .container-general-footer{
+    height: 155px;
+    text-align: center;
+  }
+  .redes-footer{
+    padding-top: 60px;
+    padding-left: 25px;
+  }
+  .information-f{
+    padding: 0px 0px 0 0;
   }
 
 }
@@ -688,6 +709,9 @@
   .modal-header{
     width: 492px;
     height: 496px;
+  }
+  nav{
+    padding: 0px 0px;
   }
   .modal-dialog{
 
@@ -704,6 +728,32 @@
   }
   .container-logo{
     padding-top: 30px;
+  }
+  .container-general-footer-logo{
+    height: 130px;
+  }
+  .container-general-footer{
+    height: 155px;
+    text-align: center;
+  }
+  .redes-footer{
+    padding-top: 0px;
+    padding-left: 25px;
+  }
+  .information-f{
+    padding: 0px 0px 0 0;
+  }
+  .emojis{
+    width: 7%;
+  }
+  .description-f{
+    margin: 0px 0 6px 0;
+  }
+  .caption-text-f{
+    font-size: 11px!important;
+  }
+  .contenedor{
+    text-align: center;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -724,3 +774,15 @@
   }
 
 }
+
+@media (min-width: 375px) and (max-width: 550px){
+  .modal-dialog{
+    margin: 37px;
+  }
+  @media (min-width: 425px) and (max-width: 550px){
+    .modal-dialog{
+     margin: 65px;
+   }
+
+ }
+
