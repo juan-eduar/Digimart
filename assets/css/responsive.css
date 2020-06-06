@@ -696,6 +696,27 @@
   .information-f{
     padding: 0px 0px 0 0;
   }
+  .modal-dialog{
+    margin: 19px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  #carousel-custom .carousel-outer{
+    padding-left: 20px;
+  }
+  .current.img-big{
+    height: 345px;
+  }
+  .description-view{
+    padding-top: 30px;
+  }
+  .description-producto{
+    height: 335px;
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
+    margin-left: 5px;
+  }
 
 }
 
@@ -754,6 +775,9 @@
   }
   .contenedor{
     text-align: center;
+  }
+  .carousel-indicators{
+    display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px){
