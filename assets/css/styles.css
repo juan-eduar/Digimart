@@ -940,3 +940,31 @@ body{
   .container-general-footer-logo{
    height: 200px;
  }
+ .img-mostrar{
+  width: 100%;
+
+}
+.img-navs{
+  width: 100%;
+  min-height: 163px;
+
+  
+}
+.img-navs::focus{
+  outline: none;
+}
+.cuadro-descripcion {
+  padding-top: 19px;
+}
+.container-navs__slider::focus{
+  outline: none;
+}
+#description .slick-list{
+  height: 635px !important;
+}
+#description .slick-vertical .slick-slide{
+  outline: none;
+}
+#description .slick-slide{
+  outline: none;
+}

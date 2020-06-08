@@ -717,6 +717,12 @@
   .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
     margin-left: 5px;
   }
+  .columna-mostrar {
+    display: none;
+  }
+  #description .slick-list{
+    height: 350px !important;
+  }
 
 }
 
@@ -779,6 +785,24 @@
   .carousel-indicators{
     display: none;
   }
+  .img-navs{
+    width: 65%;
+    min-height: 455px;
+  }
+  .columna-mostrar {
+    display: none;
+  }
+  #description{
+    padding: 10px 0px 0 0px;
+  }
+  #description h3{
+    display: flex;
+    justify-content: center;
+  }
+  #description .slick-list{
+    height: 530px !important;
+  }
+
 }
 @media (min-width: 992px) and (max-width: 1199px){
   #footer{
@@ -795,6 +819,9 @@
   }
   #category{
     padding: 40px 100px;
+  }
+  .logo{
+    padding: 0px 0 0 0px;
   }
 
 }

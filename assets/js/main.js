@@ -37,7 +37,7 @@ $(document).ready(function(){
     breakpoint: 600,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
     }
   },
   {
@@ -52,7 +52,85 @@ $(document).ready(function(){
     // instead of a settings object
     ]
   });
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
 
+    asNavFor: '.slider-nav2',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });
+  $('.slider-nav2').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true,
+    verticalSwiping: true,
+    vertical: true,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+
+        vertical: false,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: false,
+
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: false,
+
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });
   
   $('.color-choose input').on('click', function() {
     var ravi_color = $(this).attr('data-image');
