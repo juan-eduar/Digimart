@@ -483,7 +483,7 @@
 }
 
 }
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+/*@media screen and (max-width: 1024px) and (min-width: 769px) {
   nav{
     padding: 30px 15px;
     height: 150px;
@@ -616,7 +616,7 @@
 
   
 }
-
+*/
 
 @media (min-width: 0px) and (max-width: 767px){
   .container-logo{
@@ -680,7 +680,8 @@
     padding: 20px 10px;
   }
   .img-products{
-    width: 246px;
+    width: 126px;
+    height: 119px;
   }
   .container-general-footer-logo{
     height: 115px;
@@ -723,7 +724,28 @@
   #description .slick-list{
     height: 350px !important;
   }
-
+  .caption-products{
+    position: relative !important;
+  }
+  .main-category__content{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-category__sidebar--mostrar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .caption-products{
+    height: 135px !important;
+  }
+  .main-category__sidebar--mostrar--2{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-top: 35px;
+ }
+ nav{
+  width: 100%;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -802,27 +824,61 @@
   #description .slick-list{
     height: 530px !important;
   }
+  .main-category__sidebar--mostrar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-category__sidebar--mostrar--2{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-top: 65px;
+ }
+ .img-products{
 
+  height: 146px;
+}
+.hvr-shadow-p{
+  width: 165px;
+}
+.main-category__content{
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  padding-top: 30px;
+}
+.caption-products{
+  height: 135px !important;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px){
-  #footer{
-    height: 0px;
-  }
-  .title-social-f{
-    color: white;
-  }
-  .caption-description-f{
-    color: white;
-  }
-  .container-logo{
-    padding-top: 30px;
-  }
-  #category{
-    padding: 40px 100px;
-  }
-  .logo{
-    padding: 0px 0 0 0px;
-  }
+
+ #footer{
+  height: 0px;
+}
+.title-social-f{
+  color: white;
+}
+.caption-description-f{
+  color: white;
+}
+.container-logo{
+  padding-top: 30px;
+}
+#category{
+  padding: 40px 100px;
+}
+.logo{
+  padding: 0px 0 0 0px;
+}
+.main-category__sidebar--mostrar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-category__sidebar--mostrar--2{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding-top: 65px;
+}
+
 
 }
 
