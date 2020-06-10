@@ -260,3 +260,11 @@ div#carousel-custom {
 .social-icons .fa-facebook,.social-icons .fa-facebook-square{
   background-color:#3C599F;
 }  
+.img-products2{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
