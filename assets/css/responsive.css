@@ -746,6 +746,11 @@
  nav{
   width: 100%;
 }
+.main-products__grid--content{
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -847,6 +852,11 @@
 }
 .caption-products{
   height: 135px !important;
+}
+.main-products__grid--content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 }
 @media (min-width: 992px) and (max-width: 1199px){
