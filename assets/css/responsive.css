@@ -858,6 +858,10 @@
   grid-template-columns: 1fr 1fr;
   
 }
+.contenedor-a{
+  display: flex;
+  justify-content: center;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px){
 
