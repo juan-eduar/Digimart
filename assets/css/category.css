@@ -42,6 +42,7 @@
 	display: grid;
 	grid-template-columns: 320px 1fr;
 	grid-gap: 40px;
+	padding-top: 20px;
 }
 .caption-products{
 	position: relative !important;

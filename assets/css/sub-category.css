@@ -13,6 +13,8 @@
 .box-category{
 	background-color: #fff;
 	height: auto;
+	align-self: flex-start;
+	padding-left: 20px;
 }
 .breadcrumb-nav{
 	width: 100%;
@@ -39,7 +41,7 @@ div .nav-wrapper {
 	color:#000;
 }
 .box-productos{
-	height: auto;
+	height: 0;
 }
 .box-card{
 	height: 100px;
