@@ -27,17 +27,17 @@ $(document).ready(function(){
    {
     breakpoint: 1024,
     settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 2,
+      slidesToScroll: 2,
       infinite: true,
-      dots: true
+
     }
   },
   {
     breakpoint: 600,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
     }
   },
   {
@@ -55,7 +55,7 @@ $(document).ready(function(){
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
 
     asNavFor: '.slider-nav2',
@@ -66,7 +66,8 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        arrows: true,
+        
       }
     },
     {
@@ -102,10 +103,12 @@ $(document).ready(function(){
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
         vertical: false,
+
+        
       }
     },
     {
