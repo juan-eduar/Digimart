@@ -778,6 +778,9 @@
 .container-logo .row{
   margin: 0px !important;
 }
+#nosotros{
+  padding: 0px 10px 0 10px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -867,7 +870,7 @@
  }
  .img-products{
 
-  height: 146px;
+  height: 190px;
 }
 .hvr-shadow-p{
   width: 100%;
@@ -961,15 +964,23 @@
   justify-content: center;
 }
 .img-mostrar{
-  width: 87%;
+  width: 100%;
   height: 550px;
-  s
+  
 }
 .img-slider__mostrar{
   display: flex !important;
   justify-content: center;
 }
-
+.category-products{
+  padding: 0 34px 0 34px;
+}
+.caption-carousel{
+  width: 86%;
+}
+.slide{
+  padding: 10px 34px 0 34px;
+}
 }
 
 @media (min-width: 375px) and (max-width: 550px){
