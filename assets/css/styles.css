@@ -501,7 +501,7 @@ body{
   }
   .caption-products{
     height: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     cursor: pointer;
     position: initial !important ;
 
@@ -1042,4 +1042,10 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
+}
+.main-products__grid{
+  padding: 0 11rem;
+}
+.main-contact{
+ padding: 0 11rem;
 }
