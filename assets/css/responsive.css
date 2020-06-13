@@ -97,10 +97,7 @@
     height: 60px;
     background-color: #fff;
   }
-  .nav-mobile {
-    padding-left: 0!important;
-    padding-right: 15px;
-  }
+  
   .icon-mobile{
     font-size: 20px;
     margin-left: 5px;
@@ -185,10 +182,7 @@
     height: 40px;
   }
   /*slider */
-  /*catalogos de productos*/
-  .title-container h2{
-    font-size: 30px;
-  }
+ 
   .catalog-products{
     padding: 0px 10px 0px 10px;
   }
@@ -196,9 +190,7 @@
     margin-bottom: 35px;
   }
   /*catalogos de productos*/
-  .title-container-category h2{
-    font-size: 30px;
-  }
+  
   .category-products{
     padding: 0 10px;
     margin-top: 0;
@@ -385,9 +377,7 @@
   .title-container h2{
     font-size: 45px;    
   }
-  .category-products{
-    padding: 0 20px;
-  }
+
   .title-container-category h2{
     font-size: 45px;
   }
@@ -441,10 +431,7 @@
   .caption-text-f{
     font-size: 10px!important;
   }
-  .text-powered{
-    width: 65px!important;
-    font-size: 12px;
-  }
+ 
   .logo-f img{
     width: 26%;
   }
@@ -615,9 +602,7 @@
   .logo{
     padding: 0px 0 0 0px;
   }
-  .small-options{
-    padding-right: 17px !important;
-  }
+  
   .contenedor{
     padding: 0;
     text-align: center;
@@ -781,18 +766,14 @@
 #nosotros{
   padding: 0px 10px 0 10px;
 }
-.main-end{
-  padding: 0 20px;
-}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px){
   .contenedor{
     padding: 0;
   }
-  .main-end{
-    padding: 0 20px;
-  }
+  
   .logo-footer img{
     width: 37%;
   }
@@ -944,9 +925,7 @@
  #footer{
   height: 0px;
 }
-.main-end{
-  padding: 20px 0 ;
-}
+
 .title-social-f{
   color: white;
 }

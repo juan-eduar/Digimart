@@ -10,6 +10,10 @@ body{
   font-weight: bold;
   text-transform: capitalize;
 }
+
+.padding__general{
+  padding: 0 10rem;
+}
 /*************
     MODAL PROMOCIONES
     **************/
@@ -129,11 +133,11 @@ body{
     right: 0;
   }
 
-  .small-options{
+  /* .small-options{
     height: 50px;
     padding-top: 8px;
     padding-right: 0!important;
-  }
+  } */
   .container-social-media{
     height: 50px;
     padding-top: 22px;
@@ -144,8 +148,14 @@ body{
     padding: 0 0 0 45px;
     float: right!important;
   }
+  .social-media a{
+    padding-right: 5px;
+  }
+  .social-media:nth-child(3) a{
+    padding-right: 5px;
+  }
   .icon-social{
-    padding: 0 10px 0 0;
+    /* padding: 0 10px 0 0; */
     color: #171717;
     font-size: 21px!important; 
     transition: .3s ease-in-out all;
@@ -181,7 +191,7 @@ body{
      SEARCH
      **********/
      .search-form{
-      padding: 0 15px 0 0;
+      /* padding: 0 15px 0 0; */
     }
 
     .search-form .form-group {
@@ -189,7 +199,7 @@ body{
       transition: all 0.35s, border-radius 0s;
       width: 34px;
       height: 34px;
-      margin-top: 4px;
+      margin-top: 10px;
       background-color: #fff;
       box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);*/
     }
@@ -268,7 +278,13 @@ body{
   .nav>li>a {
     position: relative;
     display: block;
-    padding: 15px 15px;
+    padding: 0px;
+  }
+  .nav-item{
+    padding: 15px 15px 15px 15px;
+  }
+  .nav-item:nth-child(1){
+    padding: 15px 15px 15px 0px;
   }
   .nav-link:hover{
     color: #000;
@@ -356,6 +372,11 @@ body{
 
   }
 
+
+  .main-navbar__contentop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   /* CAROUSEL SLICK*/
   section#home-F {
     padding: 0 30px;
@@ -378,6 +399,7 @@ body{
   }
   .home-slide{
     background-color: #eee;
+    width: 100%;
   }
   .slide{
     padding: 10px 101px 0 101px;
@@ -555,7 +577,7 @@ body{
   .category-products{
     width: 100%;
     height: auto;
-    padding: 0 100px 0 100px;
+    /* padding: 0 100px 0 100px; */
 
   }
   .title-container-category{
@@ -856,6 +878,7 @@ body{
     font-size: 15px;
     color: #fff;
     margin-bottom: 0rem;
+    margin-top: 8px;
 
   }
   .icon-footer{
@@ -903,7 +926,7 @@ body{
   }
   .list-sitemap{
     list-style: none; 
-    padding: 5px 10px;
+    padding: 5px 0 5px 0;
   }
   .sitemap{
     margin-top: 20px;
@@ -992,6 +1015,7 @@ body{
   color: #fee413;
 }
 .main-end__content{
+
  display: grid;
  grid-template-columns: 415px 295px 1fr;
 
@@ -1050,9 +1074,150 @@ body{
   padding: 0 11rem;
 }
 .main-contact{
- padding: 0 11rem;
+ /* padding: 0 11rem; */
 }
 
 .main-end{
-  padding: 20px 11rem;
+  padding-top: 4rem;
+}
+.main-content__categories{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content__categories .caption-category:nth-child(1){
+  width: 58%;
+  margin-right: 2%;
+
+}
+.main-content__categories .caption-category:nth-child(2){
+  width: 40%;
+  
+}
+.main-content__categories .caption-category:nth-child(3){
+  width: 40%;
+  margin-right: 2%
+}
+.main-content__categories .caption-category:nth-child(4){
+  width: 58%;
+}
+.card-carousel h3{
+  font-size: 40px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  .padding__general{
+    padding: 0 1rem;
+  }
+  .main-navbar__contentop{
+    grid-template-columns: 1fr;
+  }
+  .search-form .form-group, .search-form .form-group.hover{
+    width: 100%;
+  }
+  .search-form .form-group{
+    margin-top: 0;
+  }
+
+  .main-content__categories .caption-category:nth-child(1){
+    width: 100%;
+    margin-right: 0px;
+  
+  }
+  .main-content__categories .caption-category:nth-child(2){
+    width: 100%;
+    
+  }
+  .main-content__categories .caption-category:nth-child(3){
+    width: 100%; 
+    margin-right: 0px; 
+  }
+  .main-content__categories .caption-category:nth-child(4){
+    width: 100%;
+  }
+  .img-products__home, .img-products2{
+    background-size: contain;
+  }
+  .title-container-category h2 {
+    font-size: 45px;
+  }
+  .title-container h2 {
+    font-size: 45px;
+  }
+
+  .main-end__categoria,.main-end__contactos,.description-footer{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .main-logo__img{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  .img-logo-amarillo {
+    width: 90%;
+  }
+  footer{
+    margin-bottom: 3rem;
+  }
+  .description-f{
+    width: 100%;
+  }
+  .selec-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .card-carousel h3{
+    font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .padding__general {
+    padding: 0 4rem;
+  }
+  .home-slide {
+    margin-top: 3rem;
+  }
+  .main-end__content {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+  }
+
+  .main-end__content{
+    padding-top: 4rem;
+  }
+  .card-carousel h3{
+    font-size: 40px;
+  }
+  .img-products2{
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width:992px) {
+  .padding__general {
+    padding: 0 4rem;
+  }
+  .home-slide {
+    margin-top: 3rem;
+  }
+  .main-end__content {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+  }
+
+  .main-end__content{
+    padding-top: 4rem;
+  }
+  .card-carousel h3{
+    font-size: 40px;
+  }
+  .redes-sociales {
+    width: 100%;
+    height: 51px;
+    position: relative;
+  }
 }
