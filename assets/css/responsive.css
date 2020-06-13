@@ -934,11 +934,18 @@
 .breadcrumb-nav{
   padding-top: 15px;
 }
+.main-end__content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px){
 
  #footer{
   height: 0px;
+}
+.main-end{
+  padding: 20px 0 ;
 }
 .title-social-f{
   color: white;
