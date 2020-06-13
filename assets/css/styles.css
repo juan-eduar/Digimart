@@ -501,7 +501,7 @@ body{
   }
   .caption-products{
     height: 300px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     cursor: pointer;
     position: initial !important ;
 
@@ -1048,4 +1048,8 @@ body{
 }
 .main-contact{
  padding: 0 11rem;
+}
+
+.main-end{
+  padding: 20px 11rem;
 }
