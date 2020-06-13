@@ -679,7 +679,7 @@
     text-align: center;
   }
   .redes-footer{
-    padding-top: 60px;
+    padding-top: 20px;
     padding-left: 25px;
   }
   .information-f{
@@ -781,11 +781,17 @@
 #nosotros{
   padding: 0px 10px 0 10px;
 }
+.main-end{
+  padding: 0 20px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
   .contenedor{
     padding: 0;
+  }
+  .main-end{
+    padding: 0 20px;
   }
   .logo-footer img{
     width: 37%;
