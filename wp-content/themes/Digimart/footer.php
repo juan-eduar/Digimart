@@ -1,4 +1,6 @@
-
+<?php $args = array( 'post_type' => 'footer', 'posts_per_page' => 1);?>   
+<?php $loop = new WP_Query( $args ); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <footer class="main-end padding__general">
   <div class="main-end__content">
     <div class="main-logo__end">
@@ -6,7 +8,7 @@
         <img class="img-logo-amarillo" src="<?php echo get_template_directory_uri();?>/assets/img/logo-digimart-amarillo.png" alt="">
       </div>
       <div class="description-footer" >
-        <p>Somos tu partner tecnológico</p>
+        <p><?php the_field('slogan') ?></p>
       </div>
     </div>
     <div class="main-end__categoria">
@@ -43,20 +45,22 @@
     <div class="description-f"> 
       <h4 class="title-information-f">Visítanos</h4>
       <img class="emojis" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 5.svg" alt="" >
-      <p class="caption-text-f">C.C. las Virtudes, Planta baja, Local H-15,
-      Punto Fijo, Estado Falcón Venezuela.</p>
+      <br>
+      <a href="<?php the_field('google_maps_sitio') ?>" class="caption-text-f"><?php the_field('direccion') ?></a>
 
     </div>
     <div class="description-f">
       <h4 class="title-information-f">Escríbenos</h4>
       <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 3.svg" alt="" >
-      <p class="caption-text-f">contacto@digimartvzla.com</p>
+      <br>
+      <a href="mailto:<?php the_field('correo') ?>" class="caption-text-f"><?php the_field('correo') ?></a>
     </div>
     <div  class="description-f">
       <h4 class="title-information-f">Llámanos</h4>
-      <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 6.svg" alt="">
-      <p class="caption-text-f">+58 412-4274052</p>
-      <p class="caption-text-f">0269-2485765</p>
+      <img class="icon" src="<?php echo get_template_directory_uri();?>/assets/img/Artboard 6.svg" alt="" >
+      <br>
+      <a href="http://api.whatsapp.com/send?phone=<?php the_field('telefono_movil') ?>" class="caption-text-f">+ <?php the_field('telefono_movil') ?></a>
+      <a href="tel:<?php the_field('telefono_local') ?>" class="caption-text-f"><?php the_field('telefono_local') ?></a>
     </div>
   </div>
 </div>
@@ -64,9 +68,9 @@
 <hr class="linea-footer">
 <div class="redes-footer">
   <div class="social-f">
-    <a href="https://www.facebook.com/digimartvzla/"><i class="fa fa-facebook icon-footer" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/DigimartVzla"><i class="fa fa-twitter icon-footer" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/digimartve/"><i class="fa fa-instagram icon-footer" aria-hidden="true"></i></a>
+    <a href="<?php the_field('facebook') ?>"><i class="fa fa-facebook icon-footer" aria-hidden="true"></i></a>
+    <a href="<?php the_field('twitter') ?>"><i class="fa fa-twitter icon-footer" aria-hidden="true"></i></a>
+    <a href="<?php the_field('instagram') ?>"><i class="fa fa-instagram icon-footer" aria-hidden="true"></i></a>
   </div>
 </div>
 <div class="logo-slice">
@@ -75,22 +79,22 @@
   <p class="fecha-f">2018</p>
 </div>
 </footer>
-
+<?php endwhile; ?>
 <section id="nav-mobile">
   <div class="nav-mobile">
     <div class="navbar-nuevo visible-xs">
       <ul class="nav nav-nuevo ">
         <li class="nav-item">
-          <a class="nav-link-nuevo active" href="index.html"><i class="fa fa-home icon-mobile" aria-hidden="true"></i></a>
+          <a class="nav-link-nuevo active" href="<?php bloginfo('url'); ?>/"><i class="fa fa-home icon-mobile" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-nuevo" href="about.html"><i class="fa fa-users icon-mobile" aria-hidden="true"></i></a>
+          <a class="nav-link-nuevo" href="<?php bloginfo('url'); ?>/about"><i class="fa fa-users icon-mobile" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link-nuevo" href="product.html"><i class="fa fa-tablet icon-mobile" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-nuevo" href="#contact"><i class="fa fa-envelope icon-mobile" aria-hidden="true"></i></a>
+          <a class="nav-link-nuevo" href="<?php bloginfo('url'); ?>/#contact"><i class="fa fa-envelope icon-mobile" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>  

@@ -186,3 +186,10 @@ $(document).ready(function(){
       $('.marcas').hide(); //muestro mediante clase
     });
 });
+
+$('.btn-drop').click(function(){
+  $('.dropdown-item__desktop').removeClass('visibleDesktop')
+  $(this).siblings('.dropdown-item__desktop').addClass('visibleDesktop')
+  $('.dropdown-item__mobile').removeClass('visibleMobile')
+  $(this).siblings('.dropdown-item__mobile').addClass('visibleMobile')
+})

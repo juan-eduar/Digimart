@@ -3,61 +3,21 @@
   <section class="padding__general" id=" ">
     <div class="home-slide">
       <div id="box-slide" class="hvr-grow-shadow">
-        <div class="single-item">
+        <?php $args = array( 'post_type' => 'Banner');?>   
+        <?php $loop = new WP_Query( $args ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="box-slide-item">
-            <div class="banner-carousel" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/camera_2.jpeg');">
+            <div class="banner-carousel" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
               <div class="box-slide-mask">
                 <div class="caption-carousel">
-                  <h2 class="open-sans">Digimart</h2>
+                  <h2 class="open-sans"><?php the_title(); ?></h2>
                 </div>
               </div>
             </div>
           </div>
-          <div class="box-slide-item">
-            <div class="banner-carousel" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/Android_1.jpeg');">
-            <div class="box-slide-mask">
-              <div class="caption-carousel">
-                <h2 class="open-sans">Digimart 1</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box-slide-item">
-          <div  class="banner-carousel" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/desktop_2.jpeg');">
-            <div class="box-slide-mask">
-              <div class="caption-carousel">
-                <h2 class="open-sans">Digimart 2</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box-slide-item">
-        <div  class="banner-carousel" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/drone_1.jpg');">
-          <div class="box-slide-mask">
-            <div class="caption-carousel">
-              <h2 class="open-sans">Digimart 3</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box-slide-item">
-      <div  class="banner-carousel" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/desktop_2.jpeg');">
-        <div class="box-slide-mask">
-          <div class="caption-carousel">
-            <h2 class="open-sans">Digimart 2</h2>
-          </div>
-        </div>
+        <?php endwhile; ?>
       </div>
     </div>
-    <div class="box-slide-item">
-    <div class="banner-carousel" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/drone_1.jpg');">
-      <div class="box-slide-mask">
-        <div class="caption-carousel">
-          <h2 class="open-sans">Digimart 3</h2>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </section>  
 
@@ -72,18 +32,47 @@
  <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 8);?>   
         <?php $loop = new WP_Query( $args ); ?>
         <?php while ($loop->have_posts()) : $loop->the_post();  global $product; ?>
-    <a href="<?php the_permalink(); ?>" class="contenedor-a">
+    <div class="contenedor-a">
       <div class="card hvr-shadow-p">
         <div class="card-img">
-          <div class="img-products__home" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
+          <a href="<?php the_permalink(); ?>">
+
+            <div class="img-products__home" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"></div>
+          </a>
         </div>
         <div class="card-content">
           <div class="caption-title">
-            <h5 class="open-sans title-product"><?php the_title(); ?></h5>
+            <a href="<?php the_permalink(); ?>">
+
+              <h5 class="open-sans title-product"><?php the_title(); ?></h5>
+            </a>
+        
+            <div class="">
+              <a class=" btn-drop btn-custom btn--medium btn--filled">
+              Comprar por Whatsapp
+              </a>
+            
+              <div class="dropdown__btn dropdown-item__desktop" aria-labelledby="dropdownMenuLink">
+                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas</a> <br>
+                <a class="" href=" <?php echo 'https://web.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas</a> <br>
+                <a class="" href="<?php echo 'https://web.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas</a> <br>
+
+                
+              </div>
+              <div class="dropdown__btn dropdown-item__mobile" aria-labelledby="dropdownMenuLink">
+               
+              <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121271277&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas</a> <br>
+                <a class="" href=" <?php echo 'https://api.whatsapp.com/send?phone=5804121727855&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas</a> <br>
+                <a class="" href="<?php echo 'https://api.whatsapp.com/send?phone=5804126403077&text=Hola,%20Estoy%20interesado%20en%20este%20producto%20'.str_replace( ' ', '%20', get_the_title()) . ' ' . urlencode(get_permalink());?>">Asesor de ventas</a> <br>
+                
+              </div>
+
+
+            </div>
           </div>
         </div>
       </div>
-    </a>
+</div>
 
 <?php endwhile; ?>
 
@@ -91,6 +80,8 @@
   </div>
 
 </section>
+
+
 
 <section class="category-products padding__general ">
   <div class="container-fluid padd-no">
@@ -138,7 +129,7 @@
   </div>
 </section>
 
-<section class="main-contact padding__general">
+<section id="contacto" class="main-contact padding__general">
   <div class="main-contact__content">
     <div class="main-contact__ubicacion">
      <div class="caption-maps hvr-shadow">
@@ -151,7 +142,7 @@
         <div class="title-contacts">
           <h3 class="open-sans title-contact">Subscríbete al newsletter</h3>
         </div>
-        <div class="campos">
+        <!-- <div class="campos">
           <input class="input-form" placeholder="Nombre y Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre y Apellido'" />
         </div>
         <div class="campos">
@@ -165,7 +156,8 @@
        </div>
        <div class="campos">
         <button class="button-form hvr-button" type="submit">Enviar</button>
-      </div>
+      </div> -->
+      <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
     </div>
   </div>
 </div>

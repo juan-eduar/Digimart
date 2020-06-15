@@ -20,14 +20,18 @@
 </head>
 <body>
   <!-- Modal -->
-  <div class="modal fade" id="modal-digimart" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-header" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/pop up.jpg');">
-        <div class="mask-modal"></div>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>    
+  <?php $args = array( 'post_type' => 'oferta', 'posts_per_page' => 1);?>   
+  <?php $loop = new WP_Query( $args ); ?>
+  <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <div class="modal fade" id="modal-digimart" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-header" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
+          <div class="mask-modal"></div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>    
+      </div>
     </div>
-  </div>
+  <?php endwhile; ?>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid header hvr-shadow">
       <header id="header" class="">
@@ -127,7 +131,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link hvr-overline-nav" href="#contact">Contacto</a>
+                <a class="nav-link hvr-overline-nav" href="<?php bloginfo('url'); ?>/#contacto">Contacto</a>
               </li>
             </ul>
             

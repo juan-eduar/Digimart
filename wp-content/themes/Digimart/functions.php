@@ -30,39 +30,39 @@ function excerpt($limit) {
 function Banner() {
 
 	$labels = array(
-		'name'                  => _x( 'Banner ', 'Post Type General Name', 'nivel' ),
-		'singular_name'         => _x( 'Banner', 'Post Type Singular Name', 'nivel' ),
-		'menu_name'             => __( 'Banners', 'nivel' ),
-		'name_admin_bar'        => __( 'Banners', 'nivel' ),
-		'archives'              => __( 'Archivo', 'nivel' ),
-		'attributes'            => __( 'Atributos', 'nivel' ),
-		'parent_item_colon'     => __( 'Artículo principal', 'nivel' ),
-		'all_items'             => __( 'Todos los artículos', 'nivel' ),
-		'add_new_item'          => __( 'Agregar ítem nuevo', 'nivel' ),
-		'add_new'               => __( 'Añadir nuevo', 'nivel' ),
-		'new_item'              => __( 'Nuevo artículo', 'nivel' ),
-		'edit_item'             => __( 'Editar elemento', 'nivel' ),
-		'update_item'           => __( 'Actualizar artículo', 'nivel' ),
-		'view_item'             => __( 'Ver ítem', 'nivel' ),
-		'view_items'            => __( 'Ver artículos', 'nivel' ),
-		'search_items'          => __( 'Buscar artículo', 'nivel' ),
-		'not_found'             => __( 'Extraviado', 'nivel' ),
-		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'nivel' ),
-		'featured_image'        => __( 'Foto principal', 'nivel' ),
-		'set_featured_image'    => __( 'Establecer imagen destacada', 'nivel' ),
-		'remove_featured_image' => __( 'Remove featured image', 'nivel' ),
-		'use_featured_image'    => __( 'Usar como imagen destacada', 'nivel' ),
-		'insert_into_item'      => __( 'Insertar en el elemento', 'nivel' ),
-		'uploaded_to_this_item' => __( 'Subido a este artículo', 'nivel' ),
-		'items_list'            => __( 'Lista de artículos', 'nivel' ),
-		'items_list_navigation' => __( 'Lista de elementos de navegación', 'nivel' ),
-		'filter_items_list'     => __( 'Lista de elementos de filtro', 'nivel' ),
+		'name'                  => _x( 'Banner ', 'Post Type General Name', 'digimart' ),
+		'singular_name'         => _x( 'Banner', 'Post Type Singular Name', 'digimart' ),
+		'menu_name'             => __( 'Banners', 'digimart' ),
+		'name_admin_bar'        => __( 'Banners', 'digimart' ),
+		'archives'              => __( 'Archivo', 'digimart' ),
+		'attributes'            => __( 'Atributos', 'digimart' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'digimart' ),
+		'all_items'             => __( 'Todos los artículos', 'digimart' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'digimart' ),
+		'add_new'               => __( 'Añadir nuevo', 'digimart' ),
+		'new_item'              => __( 'Nuevo artículo', 'digimart' ),
+		'edit_item'             => __( 'Editar elemento', 'digimart' ),
+		'update_item'           => __( 'Actualizar artículo', 'digimart' ),
+		'view_item'             => __( 'Ver ítem', 'digimart' ),
+		'view_items'            => __( 'Ver artículos', 'digimart' ),
+		'search_items'          => __( 'Buscar artículo', 'digimart' ),
+		'not_found'             => __( 'Extraviado', 'digimart' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'digimart' ),
+		'featured_image'        => __( 'Foto principal', 'digimart' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'digimart' ),
+		'remove_featured_image' => __( 'Remove featured image', 'digimart' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'digimart' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'digimart' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'digimart' ),
+		'items_list'            => __( 'Lista de artículos', 'digimart' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'digimart' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'digimart' ),
 	);
 	$args = array(
-		'label'                 => __( 'Banner Home', 'nivel' ),
-		'description'           => __( 'Post Type Description', 'nivel' ),
+		'label'                 => __( 'Banner Home', 'digimart' ),
+		'description'           => __( 'Post Type Description', 'digimart' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'thumbnail' ),
 		'taxonomies'            => array(  ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -82,6 +82,122 @@ function Banner() {
 
 }
 add_action( 'init', 'Banner', 0 );
+
+
+// Register Custom Banner Home
+function Oferta() {
+
+	$labels = array(
+		'name'                  => _x( 'Oferta ', 'Post Type General Name', 'digimart' ),
+		'singular_name'         => _x( 'Oferta', 'Post Type Singular Name', 'digimart' ),
+		'menu_name'             => __( 'Oferta', 'digimart' ),
+		'name_admin_bar'        => __( 'Oferta', 'digimart' ),
+		'archives'              => __( 'Archivo', 'digimart' ),
+		'attributes'            => __( 'Atributos', 'digimart' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'digimart' ),
+		'all_items'             => __( 'Todos los artículos', 'digimart' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'digimart' ),
+		'add_new'               => __( 'Añadir nuevo', 'digimart' ),
+		'new_item'              => __( 'Nuevo artículo', 'digimart' ),
+		'edit_item'             => __( 'Editar elemento', 'digimart' ),
+		'update_item'           => __( 'Actualizar artículo', 'digimart' ),
+		'view_item'             => __( 'Ver ítem', 'digimart' ),
+		'view_items'            => __( 'Ver artículos', 'digimart' ),
+		'search_items'          => __( 'Buscar artículo', 'digimart' ),
+		'not_found'             => __( 'Extraviado', 'digimart' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'digimart' ),
+		'featured_image'        => __( 'Foto principal', 'digimart' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'digimart' ),
+		'remove_featured_image' => __( 'Remove featured image', 'digimart' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'digimart' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'digimart' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'digimart' ),
+		'items_list'            => __( 'Lista de artículos', 'digimart' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'digimart' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'digimart' ),
+	);
+	$args = array(
+		'label'                 => __( 'Oferta Home', 'digimart' ),
+		'description'           => __( 'Post Type Description', 'digimart' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title','thumbnail' ),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-slides',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Oferta', $args );
+
+}
+add_action( 'init', 'Oferta', 0 );
+
+// Register Custom Banner Home
+function Footer() {
+
+	$labels = array(
+		'name'                  => _x( 'Footer ', 'Post Type General Name', 'digimart' ),
+		'singular_name'         => _x( 'Footer', 'Post Type Singular Name', 'digimart' ),
+		'menu_name'             => __( 'Footer', 'digimart' ),
+		'name_admin_bar'        => __( 'Footer', 'digimart' ),
+		'archives'              => __( 'Archivo', 'digimart' ),
+		'attributes'            => __( 'Atributos', 'digimart' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'digimart' ),
+		'all_items'             => __( 'Todos los artículos', 'digimart' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'digimart' ),
+		'add_new'               => __( 'Añadir nuevo', 'digimart' ),
+		'new_item'              => __( 'Nuevo artículo', 'digimart' ),
+		'edit_item'             => __( 'Editar elemento', 'digimart' ),
+		'update_item'           => __( 'Actualizar artículo', 'digimart' ),
+		'view_item'             => __( 'Ver ítem', 'digimart' ),
+		'view_items'            => __( 'Ver artículos', 'digimart' ),
+		'search_items'          => __( 'Buscar artículo', 'digimart' ),
+		'not_found'             => __( 'Extraviado', 'digimart' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'digimart' ),
+		'featured_image'        => __( 'Foto principal', 'digimart' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'digimart' ),
+		'remove_featured_image' => __( 'Remove featured image', 'digimart' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'digimart' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'digimart' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'digimart' ),
+		'items_list'            => __( 'Lista de artículos', 'digimart' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'digimart' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'digimart' ),
+	);
+	$args = array(
+		'label'                 => __( 'Footer Home', 'digimart' ),
+		'description'           => __( 'Post Type Description', 'digimart' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title'),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-info',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Footer', $args );
+
+}
+add_action( 'init', 'Footer', 0 );
+
 
 function my_theme_setup() {
 	add_theme_support( 'woocommerce' );
