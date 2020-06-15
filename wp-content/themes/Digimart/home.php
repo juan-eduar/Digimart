@@ -2,7 +2,7 @@
   
   <section class="padding__general" id=" ">
     <div class="home-slide">
-      <div id="box-slide" class="hvr-grow-shadow">
+      <div class="box-slide" id="box-slide" class="hvr-grow-shadow">
         <?php $args = array( 'post_type' => 'Banner');?>   
         <?php $loop = new WP_Query( $args ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>

@@ -68,15 +68,17 @@
 <hr class="linea-footer">
 <div class="redes-footer">
   <div class="social-f">
-    <a href="<?php the_field('facebook') ?>"><i class="fa fa-facebook icon-footer" aria-hidden="true"></i></a>
-    <a href="<?php the_field('twitter') ?>"><i class="fa fa-twitter icon-footer" aria-hidden="true"></i></a>
-    <a href="<?php the_field('instagram') ?>"><i class="fa fa-instagram icon-footer" aria-hidden="true"></i></a>
+    <a target="_blank" href="<?php the_field('facebook') ?>"><i class="fa fa-facebook icon-footer" aria-hidden="true"></i></a>
+    <a target="_blank" href="<?php the_field('twitter') ?>"><i class="fa fa-twitter icon-footer" aria-hidden="true"></i></a>
+    <a target="_blank" href="<?php the_field('instagram') ?>"><i class="fa fa-instagram icon-footer" aria-hidden="true"></i></a>
   </div>
 </div>
 <div class="logo-slice">
   <p class="text-powered">Powered By</p>
+  <a href="" class="empresa">We can! Company </a>
+  <p class="text-powered">and</p>
   <a href="" class="empresa">SliceGroup</a>
-  <p class="fecha-f">2018</p>
+  <p class="fecha-f">2020</p>
 </div>
 </footer>
 <?php endwhile; ?>
